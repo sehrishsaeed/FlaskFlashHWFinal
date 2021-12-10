@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #6C3483; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1 style="color: purple; font-family: monaco;"/>Use a calculator to solve your problems</h1>
+    <p class="important">
+      Make some calculations here
+        <img src="{{ url_for('static', filename="images/math.jpeg") }}">
+    </p>
+{% endblock %}
